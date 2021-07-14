@@ -4,12 +4,25 @@
 
 
 @section('content')
-    <a href="{{ route('homepage') }}">homepage</a>
-    <a href="{{ route('comics.create') }}">add new comic</a>
-    <h1>comics section</h1>
 
-    @foreach ($comics as $comic)
-        <h1>{{ $comic->title }}</h1>
-    @endforeach
+    <div class="comics">
+        <a href="{{ route('homepage') }}">homepage</a>
+        <a href="{{ route('comics.create') }}">add new comic</a>
+
+        <h1>Comics section</h1>
+        <div class="slot_container">
+
+            @foreach ($comics as $comic)
+                <a href="{{ route('comics.show', $comic->id) }}">
+                    <div class="slot">
+                        <img src="{{ $comic->poster }}" alt="">
+                        <h2>{{ $comic->title }}</h2>
+                    </div>
+                </a>
+            @endforeach
+
+        </div>
+
+    </div>
 
 @endsection

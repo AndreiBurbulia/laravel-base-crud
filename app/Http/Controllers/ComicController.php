@@ -43,6 +43,7 @@ class ComicController extends Controller
         $comic->series = $request->series;
         $comic->description = $request->description;
         $comic->price = $request->price;
+        $comic->poster = $request->poster;
         $comic->on_sale_date = $request->on_sale_date;
         $comic->save();
 
@@ -57,7 +58,7 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+        return view('comics.show', compact('comic'));
     }
 
     /**

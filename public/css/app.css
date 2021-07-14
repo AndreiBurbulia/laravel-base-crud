@@ -9,3 +9,41 @@
   margin: auto;
 }
 
+.comics > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 1rem;
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+  border-radius: 15px;
+}
+
+.comics h1 {
+  margin: 3rem 0;
+}
+
+.slot_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slot_container a .slot {
+  margin: 0.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  max-width: 200px;
+  min-height: 400px;
+  padding: 0.5rem;
+}
+
+.slot_container a .slot h2 {
+  font-size: 1rem;
+}
+
+.slot_container a .slot img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+

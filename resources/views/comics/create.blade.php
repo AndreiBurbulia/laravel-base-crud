@@ -35,6 +35,12 @@
             <input type="text" name="price" id="price" class="form-control" placeholder="price" aria-describedby="helpId">
             <small id="helpprice" class="text-muted">Insert the series of comic</small>
         </div>
+        <div class="form-group">
+            <label for="poster">Poster</label>
+            <input type="text" name="poster" id="poster" class="form-control" placeholder="poster"
+                aria-describedby="helpId">
+            <small id="helpposter" class="text-muted">Insert the series of comic</small>
+        </div>
 
         <div class="form-group">
             <label for="on_sale_date">On Sale Date</label>
